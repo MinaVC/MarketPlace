@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Tajawal";
+}
+ol,
+ul {
+  list-style: none;
+  line-height: 1.2;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Tajawal";
+  src: url("../fonts/Tajawal-Regular.eot");
+  src: url("../fonts/Tajawal-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Tajawal-Regular.woff2") format("woff2"),
+    url("../fonts/Tajawal-Regular.woff") format("woff"),
+    url("../fonts/Tajawal-Regular.ttf") format("truetype"),
+    url("../fonts/Tajawal-Regular.svg#Tajawal-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/********* see more ************/
+.purple-btn {
+  text-transform: uppercase;
+  outline: none;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?gjk513");
+  src: url("../fonts/icomoon.eot?gjk513#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?gjk513") format("truetype"),
+    url("../fonts/icomoon.woff?gjk513") format("woff"),
+    url("../fonts/icomoon.svg?gjk513#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Shape1:before {
+  content: "\e903";
+  color: #572589;
+}
+.icon-Icons---Star:before {
+  content: "\e900";
+  color: #572589;
+}
+.icon-ic_done:before {
+  content: "\e901";
+  color: #f2f2f2;
+}
+.icon-Shape:before {
+  content: "\e902";
+  color: #572589;
+}
+/************/
+.item-wrapper .item .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-wrapper .item .rating span {
+  color: purple;
+  font-size: 15px;
+  margin: 0 2px;
+}
+.cover {
+  margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .item-wrapper .item {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding: 30px 0;
+  }
+  .item-wrapper .item:last-child {
+    border: none;
+  }
+  .cancel-padding-right,
+  .cancel-padding-left {
+    padding: 0;
+  }
+}
+
+@media (max-width: 523px) {
+  header .header-wrapper {
+    justify-content: center;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .logo {
+    flex-basis: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .right-side {
+    padding-bottom: 20px;
+  }
+}
+
+body .purple-btn {
+  border-radius: 3px !important;
+}
+/********* General Classes **********************/
+.see-more {
+  color: #572589 !important;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.see-more i {
+  font-size: 10px;
+}
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 807px !important;
+  }
+}
